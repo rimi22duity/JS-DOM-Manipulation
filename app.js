@@ -53,7 +53,7 @@
 /***********Traverse the DOM********/
 /***********Parent Node Traversal */
 
-let ul = document.querySelector('ul');
+// let ul = document.querySelector('ul');
 // console.log(ul);
 // console.log(ul.parentNode);
 // console.log(ul.parentNode.parentNode);
@@ -79,12 +79,36 @@ let ul = document.querySelector('ul');
 // console.log(ul.lastElementChild);
 
 /***********Sibling Node Traversal */
-const div = document.querySelector('div');
+// const div = document.querySelector('div');
 
-console.log(div.childNodes);
+// console.log(div.childNodes);
 
 // console.log(ul.previousSibling);
 // console.log(ul.nextSibling);
 
-console.log(ul.previousElementSibling);
-console.log(ul.nextElementSibling);
+// console.log(ul.previousElementSibling);
+// console.log(ul.nextElementSibling);
+
+
+/***********Event Listener********/
+
+// element.addEventListener("click", function)
+// element.addEventListener(<type of event>, <name of the function to be executed>)
+
+const buttonTwo = document.querySelector('.btn-2');
+
+function alertBtn() {
+    alert('I also Love Javascript');
+}
+
+buttonTwo.addEventListener("click", alertBtn);
+
+// Mouseover 
+
+const newBackgroundColor = document.querySelector('.box-3');
+
+function changeBgColor() {
+    newBackgroundColor.style.backgroundColor = 'blue';
+}
+
+newBackgroundColor.addEventListener("mouseover", changeBgColor);
